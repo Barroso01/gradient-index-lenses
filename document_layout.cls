@@ -16,8 +16,8 @@
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{} % Clear all headers and footers
-\fancyhead[L]{\textit{Your Paper Title}} % Left-aligned running head
-\fancyhead[R]{\textit{Institution Name}} % Right-aligned running head
+\fancyhead[L]{\textit{GRIN Superlens}} % Left-aligned running head
+\fancyhead[R]{\textit{@tec.mx}} % Right-aligned running head
 \fancyfoot[C]{\thepage} % Page numbers in the footer
 \setlength{\headheight}{15pt} % Adjust head height to avoid warnings
 
@@ -31,10 +31,9 @@
     \begin{center}
       {\LARGE \bfseries \@title \par} % Title
       \vspace{1em}
-      {\large \@author \par} % Author
-      \vspace{1em}
-      {\small \@date \par} % Date
     \end{center}
+    \RaggedRight % Left-align authors and affiliations
+    {\small \@author \par} % Authors and address
     \vspace{1.5em}
     \begin{center}
       \section*{\small \abstractname}
@@ -51,7 +50,8 @@
 
 % Abstract storage (fix for \@abstract issues)
 \newcommand{\@abstract}{} % Initialize empty abstract command
-\newcommand{\setabstract}[1]{\renewcommand{\@abstract}{#1}}
+\newcommand{\setabstract}[1]{\renewcommand{\@abstract}{#1}} % Set abstract
+\newcommand{\address}[1]{\textsuperscript{#1}} % Set authors and address
 
 % Section formatting
 \titleformat{\section} % Change section format
