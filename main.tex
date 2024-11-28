@@ -5,27 +5,39 @@
 \author{Eduardo Barroso}
 \date{\today}
 
+\setabstract{
+    This work puts forward a design of multi-component Gabor super-lens that is capable of focusing a wide field of view into a single point.
+     In this sense, an array of independent ommatidium composed of sets spherical gradient-index media are capable of focusing light with negligible aberrations similar to that of the Luneburg lens but with reduced overall dimension. 
+     The first sections of this work present the design geometric relations and simulates that the design is viable with numerical simulations based on the Lagrangian optics formalism. In the succeeding chapter, optimizations on the super-lens and individual lenses are presented. 
+     The former consists on careful implementations of geometrical and optical implications. For the latter, in order to minimize individual lens aberrations, the team introduces a variant of the Gutman lens that has three degrees of freedom giving rise to a refined optimization. 
+     Finnaly, numerical results are then presented with ray-optics, wave-optics simulations and a experimental result validates the findings. The closing sections of the paper are reserved for applications of such design in photonics, lithographic technologies, medicine, machine vision, telecommunication antennas and compound lens cameras. 
+}
+
 % Begin the document
 \begin{document}
 
 \maketitle
 
-\begin{abstract}
-This is the abstract section. Summarize your paper here in a few sentences.
-\end{abstract}
     
 \section*{Introduction}
-\input{Sections/introduction}
+\input{Sections/Introduction}
 
-\section*{Methods}
-%\input{Sections/methods}
+\section{Super-Lens Design}
+\input{Sections/Super-Lens Design}
 
-\section*{Conclusion}
-%\input{Sections/conclusion}
+\section{Design: A proof of concept}
+\input{Sections/Proof of concept}
+
+\section{Numerical Optimization and Results}
+\input{Sections/Numerical Results}
+
+\section{Applications}
+\input{Sections/Applications}
+
+\section{Conclusion}
+\input{Sections/Conclusion}
 
 % References
-\onecolumn
 \printbibliography
-\twocolumn
 
 \end{document}
